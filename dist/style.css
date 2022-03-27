@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Abel", san-serif;
+}
+
+body {
+  background: #344873;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+  padding: 1rem;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.banner1 img,
+.banner2 img,
+.banner3 img {
+  width: 100%;
+  animation: zoom-out 12s linear infinite;
+}
+.banner1 .text-box,
+.banner2 .text-box,
+.banner3 .text-box {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 5%;
+  animation: textUp 12s linear infinite;
+}
+.banner1 .text-box h1,
+.banner2 .text-box h1,
+.banner3 .text-box h1 {
+  font-size: 6rem;
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+@keyframes textUp {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+.slide1 {
+  animation: fade1 12s linear infinite;
+}
+
+.slide2 {
+  animation: fade2 12s linear infinite;
+}
+
+.slide3 {
+  animation: fade3 12s linear infinite;
+}
+
+@keyframes fade1 {
+  0% {
+    visibility: visible;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes fade2 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes fade3 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes zoom-out {
+  100% {
+    width: 80%;
+  }
+}
+.banner1, .banner2, .banner3 {
+  display: grid;
+  place-items: center;
+}
+.banner1 h1, .banner2 h1, .banner3 h1 {
+  font-size: 2.5rem;
+}
+.banner1 img, .banner2 img, .banner3 img {
+  width: 100%;
+  height: auto;
+}
+@keyframes zoom-out {
+  100% {
+    width: 90%;
+  }
+}
