@@ -38,7 +38,7 @@ body {
 .banner1 .text-box h1,
 .banner2 .text-box h1,
 .banner3 .text-box h1 {
-  font-size: 6rem;
+  font-size: 3rem;
   color: #fff;
   text-align: center;
   background: rgba(0, 0, 0, 0.2);
@@ -126,9 +126,6 @@ body {
 .banner1, .banner2, .banner3 {
   display: grid;
   place-items: center;
-}
-.banner1 h1, .banner2 h1, .banner3 h1 {
-  font-size: 2.5rem;
 }
 .banner1 img, .banner2 img, .banner3 img {
   width: 100%;
